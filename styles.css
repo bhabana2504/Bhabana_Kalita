@@ -1,4 +1,4 @@
-/* =========================================================
+/*shatter=========================================================
    Bhabana Kalita — Playful 3D Portfolio Stylesheet
    Pure HTML / CSS / JS
    ========================================================= */
@@ -744,7 +744,7 @@ em { font-style: italic; }
   position: absolute;
   background-repeat: no-repeat;
   background-size: 1000% 1000%; /* For 10x10 grid */
-  transition: transform 1.2s cubic-bezier(0.1, 0.8, 0.25, 1), opacity 1.2s ease;
+  transition: transform 1.2s cubic-bezier(0.1, 0.8, 0.25, 1), opacity 4s ease;
   transform-style: preserve-3d;
   pointer-events: none;
 }
