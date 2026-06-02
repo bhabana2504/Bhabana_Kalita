@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7ead1" />
+    <meta name="description" content="Bhabana Kalita — CS Student, Developer & Problem Solver. Java · Python · Machine Learning · Cybersecurity." />
+    <title>Bhabana Kalita — Developer & Problem Solver</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="shatter-lock">
+
+    <!-- IMPACT FLASH & SHATTER LANDING OVERLAY -->
+    <div id="shatter-flash"></div>
+    <div id="shatter-overlay">
+      <div id="shatter-face-container"></div>
+      <div id="shatter-prompt">scroll or click to enter ✿</div>
+    </div>
+
+    <!-- Custom cursor blob -->
+    <div class="cursor-blob" id="cursorBlob" aria-hidden="true"></div>
+
+    <!-- Page noise + gradient mesh background -->
+    <div class="bg-mesh" aria-hidden="true"></div>
+    <div class="bg-grain" aria-hidden="true"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+      <a href="#top" class="nav-logo">
+        <span class="logo-dot"></span> bhabana<span class="logo-amp">·</span>kalita
+      </a>
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#experience">experience</a>
+        <a href="#contact" class="nav-cta">say hi ✿</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="top" class="hero">
+      <div class="hero-stage" id="heroStage">
+        <!-- Floating 3D-ish sticker objects (parallax) -->
+        <div class="float-item" data-depth="0.6" style="--x: -38vw; --y: -18vh; --r: -8deg;">
+          <div class="sticky-note sn-yellow">
+            <span class="sn-pin"></span>
+            <p>build things<br/>that <i>matter</i> ✿</p>
+          </div>
+        </div>
+
+        <div class="float-item" data-depth="1.2" style="--x: 32vw; --y: -22vh; --r: 6deg;">
+          <div class="polaroid">
+            <div class="polaroid-img polaroid-hack">
+              <div class="trophy">🏆</div>
+              <span class="polaroid-badge">SIH '25</span>
+            </div>
+            <p class="polaroid-cap">team leader · top 50/50k</p>
+          </div>
+        </div>
+
+        <div class="float-item" data-depth="0.9" style="--x: -34vw; --y: 18vh; --r: 4deg;">
+          <div class="chip-stack">
+            <span class="chip c1">Java</span>
+            <span class="chip c2">Python</span>
+            <span class="chip c3">ML</span>
+            <span class="chip c4">Cyber</span>
+          </div>
+        </div>
+
+        <div class="float-item" data-depth="1.5" style="--x: 36vw; --y: 20vh; --r: -7deg;">
+          <div class="terminal-card" aria-hidden="true">
+            <div class="t-bar">
+              <i></i><i></i><i></i>
+              <span>~ bhabana — zsh</span>
+            </div>
+            <div class="t-body">
+              <p><span class="t-prompt">$</span> whoami</p>
+              <p class="t-out">cs undergrad · builder · finalist</p>
+              <p><span class="t-prompt">$</span> status <span class="cursor-blink">▌</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-item" data-depth="0.7" style="--x: -8vw; --y: 28vh; --r: -3deg;">
+          <div class="coffee">
+            <div class="cup"></div>
+            <div class="steam"><span></span><span></span><span></span></div>
+            <p class="coffee-label">vibe coding ☕</p>
+          </div>
+        </div>
+
+        <div class="float-item" data-depth="1.1" style="--x: 12vw; --y: -30vh; --r: 10deg;">
+          <div class="star-burst">
+            <svg viewBox="0 0 100 100" width="92" height="92"><path d="M50 5 L58 38 L92 42 L66 62 L74 95 L50 76 L26 95 L34 62 L8 42 L42 38 Z" fill="#ff5e8a"/></svg>
+            <p class="burst-text">hello!</p>
+          </div>
+        </div>
+
+        <!-- HERO TEXT -->
+        <div class="hero-text">
+          <p class="eyebrow"><span class="dot"></span> available for internships · greater noida</p>
+          <h1 class="hero-title">
+            <span class="h-line">i think,</span>
+            <span class="h-line"><span class="ink">then i</span> <span class="hand-mark">build</span>.</span>
+          </h1>
+          <p class="hero-sub">
+            CS undergrad turning ambiguous problems into shipped software —
+            from <b>AES-encrypted distributed systems</b> to <b>AI risk predictors</b>.
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#projects">see my work →</a>
+            <a class="btn btn-ghost" href="https://bhabana2504.github.io/Portfolio/Resume202604200156.pdf" target="_blank" rel="noopener">resume.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="section-head">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">about <em>me</em></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card tilt">
+          <div class="ribbon">hello ✿</div>
+          <p>
+            I'm <b>Bhabana Kalita</b>, a Computer Science undergrad at
+            <b>Galgotias University</b> targeting Software Engineer / Developer
+            internship roles. Results-driven, building with <b>Java, Python, ML</b>
+            and <b>Cybersecurity</b> — the messier the problem, the better.
+          </p>
+          <p>
+            Two-time <b>Smart India Hackathon</b> finalist · team leader · always
+            in <i>"let me try this"</i> mode. I care about craft, edge cases, and
+            shipping things that change how something operates.
+          </p>
+          <a class="mini-link" href="mailto:bhabanakalita2504@gmail.com">→ say hello</a>
+        </div>
+
+        <div class="about-stack">
+          <div class="stat-card tilt">
+            <span class="stat-num">7.5</span>
+            <span class="stat-lbl">CGPA · B.Tech CSE</span>
+          </div>
+          <div class="stat-card tilt stat-pink">
+            <span class="stat-num">6+</span>
+            <span class="stat-lbl">hackathons shipped</span>
+          </div>
+          <div class="stat-card tilt stat-mint">
+            <span class="stat-num">87%</span>
+            <span class="stat-lbl">ML model accuracy</span>
+          </div>
+          <div class="stat-card tilt stat-lilac">
+            <span class="stat-num">2×</span>
+            <span class="stat-lbl">internships completed</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <div class="section-head">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">the <em>toolkit</em></h2>
+        <p class="sec-sub">forged through hackathons, internships, and building real things.</p>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill-tile" style="--bg:#ffd6a5">
+          <span class="skill-cat">Languages</span>
+          <b>Java</b>
+          <span class="skill-desc">OOP · Multithreading · Socket Programming</span>
+        </div>
+        <div class="skill-tile" style="--bg:#bde0fe">
+          <span class="skill-cat">Languages</span>
+          <b>Python</b>
+          <span class="skill-desc">Pandas · NumPy · Flask · Scikit-learn</span>
+        </div>
+        <div class="skill-tile" style="--bg:#fdffb6">
+          <span class="skill-cat">Web</span>
+          <b>React</b>
+          <span class="skill-desc">Component Architecture · REST APIs · Dashboards</span>
+        </div>
+        <div class="skill-tile" style="--bg:#caffbf">
+          <span class="skill-cat">AI / ML</span>
+          <b>ML</b>
+          <span class="skill-desc">Classification · Regression · ETL Pipelines · Scikit-learn</span>
+        </div>
+        <div class="skill-tile" style="--bg:#ffadad">
+          <span class="skill-cat">Security</span>
+          <b>Cyber</b>
+          <span class="skill-desc">Pen Testing · OWASP · Vulnerability Assessment</span>
+        </div>
+        <div class="skill-tile" style="--bg:#a0c4ff">
+          <span class="skill-cat">Database</span>
+          <b>SQL</b>
+          <span class="skill-desc">ETL · Data Modeling · Queries</span>
+        </div>
+        <div class="skill-tile" style="--bg:#bdb2ff">
+          <span class="skill-cat">Cloud</span>
+          <b>AWS</b>
+          <span class="skill-desc">Data Engineering · Cloud Services · Academy Graduate</span>
+        </div>
+        <div class="skill-tile" style="--bg:#ffc6ff">
+          <span class="skill-cat">Core CS</span>
+          <b>DSA</b>
+          <span class="skill-desc">Algorithms · Data Structures · Problem Solving</span>
+        </div>
+        <div class="skill-tile" style="--bg:#9bf6ff">
+          <span class="skill-cat">Web</span>
+          <b>HTML / CSS</b>
+          <span class="skill-desc">HTML5 · CSS3 · JavaScript · REST APIs</span>
+        </div>
+        <div class="skill-tile" style="--bg:#ffd6e0">
+          <span class="skill-cat">Languages</span>
+          <b>C</b>
+          <span class="skill-desc">Systems Programming · Data Structures</span>
+        </div>
+        <div class="skill-tile" style="--bg:#e4c1f9">
+          <span class="skill-cat">AI</span>
+          <b>Gen AI</b>
+          <span class="skill-desc">LLMs · Workflow Design · Model Optimization</span>
+        </div>
+        <div class="skill-tile" style="--bg:#f6dfeb">
+          <span class="skill-cat">Tools</span>
+          <b>Tools</b>
+          <span class="skill-desc">Git · GitHub · Figma · Canva</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+      <div class="section-head">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">selected <em>work</em></h2>
+        <p class="sec-sub">things i built — from encrypted file systems to campus portals.</p>
+      </div>
+
+      <div class="project-list">
+
+        <!-- Project 1: UniScout -->
+        <article class="project tilt">
+          <div class="p-content">
+            <div class="p-meta">
+              <span class="p-num">01</span>
+              <span class="p-year">2026</span>
+            </div>
+            <div class="p-body">
+              <h3>UniScout <span class="p-emoji">🎓</span></h3>
+              <p class="p-tag">Unified Smart Campus Portal</p>
+              <p>
+                A full-stack smart campus portal that keeps students connected to
+                university activities, events, and resources. Features a 3D
+                constellation canvas background, opaque obsidian card UI, and a
+                standby fail-safe system that falls back to seeded data when the
+                Express + MySQL API is offline.
+              </p>
+              <div class="p-stack">
+                <span>Node.js</span><span>Express</span><span>MySQL</span><span>HTML5</span><span>CSS3</span><span>Vanilla JS</span>
+              </div>
+              <div class="p-links">
+                <a href="https://github.com/bhabana2504/UniScout" target="_blank" rel="noopener">code ↗</a>
+                <a href="https://erphelp.netlify.app/" target="_blank" rel="noopener">live demo ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-visual pv-uniscout" aria-hidden="true" style="background: linear-gradient(165deg, var(--accent-2), var(--accent-5)); display: flex; align-items: center; justify-content: center;">
+            <div class="pv-browser">
+              <div class="pv-browser-bar">
+                <i></i><i></i><i></i>
+              </div>
+              <div class="pv-browser-content">
+                <img src="uniscout.png" alt="UniScout Dashboard" class="p-screenshot" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Rental PM -->
+        <article class="project tilt">
+          <div class="p-content">
+            <div class="p-meta">
+              <span class="p-num">02</span>
+              <span class="p-year">2026</span>
+            </div>
+            <div class="p-body">
+              <h3>Rental PM Pro <span class="p-emoji">🏠</span></h3>
+              <p class="p-tag">Full-stack Rental Property Management</p>
+              <p>
+                A scalable multi-role rental platform with JWT auth (Admin / Owner
+                / Tenant / Staff), Aadhaar verification, an AI fraud risk engine
+                (0–100), PDFKit lease generation, secure document vault, and an
+                analytics dashboard. Falls back gracefully to offline demo mode.
+              </p>
+              <div class="p-stack">
+                <span>Node.js</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>PDFKit</span><span>HTML/CSS/JS</span>
+              </div>
+              <div class="p-links">
+                <a href="https://github.com/bhabana2504/Rental_Property_Management_System" target="_blank" rel="noopener">code ↗</a>
+                <a href="https://rental-property-management-system.vercel.app/" target="_blank" rel="noopener">live demo ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-visual pv-rental" aria-hidden="true" style="background: linear-gradient(165deg, var(--accent-3), var(--accent-4)); display: flex; align-items: center; justify-content: center;">
+            <div class="pv-browser">
+              <div class="pv-browser-bar">
+                <i></i><i></i><i></i>
+              </div>
+              <div class="pv-browser-content">
+                <img src="rental.png" alt="Rental PM Pro Dashboard" class="p-screenshot" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Secure File Transfer -->
+        <article class="project tilt">
+          <div class="p-content">
+            <div class="p-meta">
+              <span class="p-num">03</span>
+              <span class="p-year">2025</span>
+            </div>
+            <div class="p-body">
+              <h3>Secure File Transfer System <span class="p-emoji">🔐</span></h3>
+              <p class="p-tag">AES-256 encrypted P2P file transfer</p>
+              <p>
+                Production-grade AES-256 encrypted peer-to-peer file transfer in
+                Java using TCP Socket Programming and Multithreading. Includes
+                checksum validation, token-based authentication, and role-based
+                access control (RBAC).
+              </p>
+              <div class="p-stack">
+                <span>Java</span><span>AES-256</span><span>Sockets</span><span>Cryptography</span><span>Multithreading</span>
+              </div>
+              <div class="p-links">
+                <a href="https://github.com/bhabana2504" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-visual pv-secure" aria-hidden="true" style="background: linear-gradient(165deg, #1c1410, #322820); display: flex; align-items: center; justify-content: center;">
+            <div class="pv-browser" style="border-color: #2ecc71; box-shadow: 4px 4px 0 #2ecc71;">
+              <div class="pv-browser-bar" style="background: #1c1410; border-bottom-color: #2ecc71;">
+                <i style="background: #2ecc71;"></i><i style="background: #2ecc71;"></i><i style="background: #2ecc71;"></i>
+              </div>
+              <div class="pv-browser-content">
+                <img src="secure.png" alt="Secure File Transfer UI" class="p-screenshot" />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: AI Supply Chain -->
+        <article class="project tilt">
+          <div class="p-content">
+            <div class="p-meta">
+              <span class="p-num">04</span>
+              <span class="p-year">2025</span>
+            </div>
+            <div class="p-body">
+              <h3>AI Supply Chain Risk Predictor <span class="p-emoji">📦</span></h3>
+              <p class="p-tag">87%+ accuracy ML classifier</p>
+              <p>
+                Supervised ML classification model achieving 87%+ accuracy
+                predicting supply chain disruption across 500+ real-world data
+                points. End-to-end ETL pipeline, Flask REST API, and a React
+                dashboard for real-time risk visualization.
+              </p>
+              <div class="p-stack">
+                <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>Flask</span><span>REST API</span><span>React</span>
+              </div>
+              <div class="p-links">
+                <a href="https://github.com/bhabana2504" target="_blank" rel="noopener">code ↗</a>
+              </div>
+            </div>
+          </div>
+          <div class="p-visual pv-ai" aria-hidden="true">
+            <div class="chart">
+              <div class="bar" style="--h:60%"></div>
+              <div class="bar" style="--h:42%"></div>
+              <div class="bar" style="--h:78%"></div>
+              <div class="bar" style="--h:33%"></div>
+              <div class="bar" style="--h:88%"></div>
+              <div class="bar" style="--h:55%"></div>
+            </div>
+            <span class="acc-pill">87% acc</span>
+          </div>
+        </article>
+
+      </div>
+
+      <a class="big-link" href="https://github.com/bhabana2504" target="_blank" rel="noopener">view all on github ↗</a>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+      <div class="section-head">
+        <span class="sec-num">04</span>
+        <h2 class="sec-title">internship <em>experience</em></h2>
+      </div>
+
+      <div class="exp-grid">
+        <div class="exp-card tilt">
+          <div class="exp-date">Jun 2025 — Jul 2025</div>
+          <h3>Cybersecurity Intern</h3>
+          <p class="exp-org">Codec Technologies</p>
+          <ul>
+            <li>Conducted VA / pen testing on web + network systems — identified <b>10+ critical vulnerabilities</b>.</li>
+            <li>Ran phishing simulations + ethical hacking exercises using OWASP principles to reduce attack vectors.</li>
+          </ul>
+        </div>
+        <div class="exp-card tilt">
+          <div class="exp-date">Oct 2024 — Dec 2024</div>
+          <h3>Generative AI Intern</h3>
+          <p class="exp-org">Eduskills Foundation</p>
+          <ul>
+            <li>Designed Generative AI workflows using Large Language Models.</li>
+            <li>Improved model response accuracy + efficiency across multiple test scenarios.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS + EDUCATION -->
+    <section class="section achievements">
+      <div class="section-head">
+        <span class="sec-num">05</span>
+        <h2 class="sec-title">achievements <em>&amp;</em> education</h2>
+      </div>
+
+      <div class="ach-grid">
+        <div class="ach-card tilt">
+          <div class="ach-icon">🥇</div>
+          <h4>SIH 2025 — Team Leader</h4>
+          <p>Top 50 teams out of 50,000+ participants. Led strategy, technical task delegation & final presentation.</p>
+        </div>
+        <div class="ach-card tilt">
+          <div class="ach-icon">🏅</div>
+          <h4>SIH 2024 — National Finalist</h4>
+          <p>End-to-end solution design, algorithm development & cross-functional team coordination.</p>
+        </div>
+        <div class="ach-card tilt">
+          <div class="ach-icon">⚡</div>
+          <h4>6+ Hackathons</h4>
+          <p>Rapid prototyping, problem-solving with DSA, collaborative leadership under time constraints.</p>
+        </div>
+        <div class="ach-card tilt">
+          <div class="ach-icon">🛠️</div>
+          <h4>Multi-Domain Builder</h4>
+          <p>Real systems spanning ML, cybersecurity & distributed computing — AES file transfer, 87% AI predictors.</p>
+        </div>
+      </div>
+
+      <div class="edu-list">
+        <div class="edu-row">
+          <div><b>B.Tech — Computer Science & Engineering</b><br/><span>Galgotias University</span></div>
+          <div class="edu-meta"><span>2023 – 2027</span><span class="edu-grade">7.5 CGPA</span></div>
+        </div>
+        <div class="edu-row">
+          <div><b>Senior Secondary — Class XII</b><br/><span>Narayana E-Techno School, Guwahati</span></div>
+          <div class="edu-meta"><span>2023</span><span class="edu-grade">71.9%</span></div>
+        </div>
+        <div class="edu-row">
+          <div><b>Secondary — Class X</b><br/><span>Don Bosco School, Sonaighuli</span></div>
+          <div class="edu-meta"><span>2021</span><span class="edu-grade">82.6%</span></div>
+        </div>
+      </div>
+
+      <div class="certs">
+        <span class="cert-pill">AWS Academy — Data Engineering</span>
+        <span class="cert-pill">Oracle: AI Foundation Associate</span>
+        <span class="cert-pill">Oracle: SQL</span>
+        <span class="cert-pill">Infosys: Business Intelligence</span>
+        <span class="cert-pill">GUVI / IIT-M: Java · Python · DSA</span>
+        <span class="cert-pill">CodeChef: C Programming</span>
+      </div>
+    </section>
+
+    <!-- CONTACT CARD -->
+    <section id="contact" class="section contact">
+      <div class="contact-card tilt">
+        <div class="contact-stamp">
+          <span>OPEN TO</span>
+          <strong>OPPORTUNITIES</strong>
+          <span>2026 · 2027</span>
+        </div>
+
+        <div class="contact-inner">
+          <p class="contact-eyebrow">let's build something ✿</p>
+          <h2 class="contact-title">
+            available for <em>internships</em> &amp; full-time <em>SWE</em> roles.
+          </h2>
+          <p class="contact-sub">
+            Reach out for software engineering, ML, or cybersecurity opportunities — I'd love to hear what you're building.
+          </p>
+
+          <div class="contact-grid">
+            <a class="contact-tile c-mail" href="mailto:bhabanakalita2504@gmail.com">
+              <span class="ct-lbl">email</span>
+              <span class="ct-val">bhabanakalita2504@gmail.com</span>
+              <span class="ct-arrow">→</span>
+            </a>
+            <a class="contact-tile c-phone" href="tel:+916003400833">
+              <span class="ct-lbl">phone</span>
+              <span class="ct-val">+91 600 340 0833</span>
+              <span class="ct-arrow">→</span>
+            </a>
+            <a class="contact-tile c-linkedin" href="https://linkedin.com/in/bhabana-kalita-338640295" target="_blank" rel="noopener">
+              <span class="ct-lbl">linkedin</span>
+              <span class="ct-val">bhabana-kalita</span>
+              <span class="ct-arrow">→</span>
+            </a>
+            <a class="contact-tile c-github" href="https://github.com/bhabana2504" target="_blank" rel="noopener">
+              <span class="ct-lbl">github</span>
+              <span class="ct-val">@bhabana2504</span>
+              <span class="ct-arrow">→</span>
+            </a>
+          </div>
+
+          <a class="contact-bigbtn" href="mailto:bhabanakalita2504@gmail.com">
+            send me an email ✿
+          </a>
+        </div>
+
+        <!-- Decorative stickers -->
+        <div class="cc-sticker cc-s1">✿</div>
+        <div class="cc-sticker cc-s2">★</div>
+        <div class="cc-sticker cc-s3">✦</div>
+        <div class="cc-sticker cc-s4">♥</div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 · Bhabana Kalita · <span>handcrafted with HTML, CSS &amp; JS</span></p>
+      <p class="foot-hand">made with ✿ in greater noida</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
