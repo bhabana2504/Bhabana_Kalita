@@ -139,19 +139,6 @@ Build for production
 ```bash
 npm run build
 ```
-
----
-
-##  Contact
-
- Email: your-email@example.com
-
- Portfolio: https://bhabanakalita.netlify.app
-
- LinkedIn: linkedin.com/in/bhabana-kalita-338640295
-
- GitHub: https://github.com/bhabana2504
-
 ---
 
 ##  Contributions
