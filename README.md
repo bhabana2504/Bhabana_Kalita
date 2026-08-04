@@ -142,27 +142,6 @@ npm run build
 
 ---
 
-## 📸 Preview
-
-> Add screenshots of your portfolio here.
-
-```
-assets/
-    home.png
-    projects.png
-    skills.png
-```
-
-```markdown
-![Home](assets/home.png)
-
-![Projects](assets/projects.png)
-
-![Skills](assets/skills.png)
-```
-
----
-
 ##  Contact
 
  Email: your-email@example.com
